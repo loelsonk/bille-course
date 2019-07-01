@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="author" content="Mateusz Kapeluszny">
+
+        <title>Directives and Scalars</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+        <link rel="stylesheet" href="assets/custom.css">
+        <link rel="stylesheet" href="assets/prismjs/prism.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/atom-one-light.css">
+
+        <script src="assets/offline/fonts.js"></script>
+        <script src="assets/prismjs/prism.js"></script>
+
+        <script src="https://use.typekit.net/jor2kyz.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-background="#384359" class="first-slide">
+                    <img src="assets/img/graphql-white.svg" class="logo-image"/>
+
+                    <p style="text-align: center" class="title-font">
+                        <strong>GraphQL</strong> Directives and Scalars
+                    </p>
+
+                    <p style="font-size: 70%; opacity: 0.5" class="normal-font">
+                        by Mateusz Kapeluszny
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Scalars</h2>
+                </section>
+
+                <section >
+                <img src="assets/svg/graphql-tree2.svg" />
+                </section>
+
+                <section class="section">
+                    <h2>Scalars</h2>
+
+                    <div style="display: grid; grid-template-columns: 150px 100%">
+                        <div>
+                            <pre>
+                                <code data-trim contenteditable class="language-graphql">
+                                    Int
+                                    Float
+                                    String
+                                    Boolean
+                                    ID
+                                </code>
+                            </pre>
+                            <pre class="fragment fade-in" data-fragment-index="2">
+                                <code data-trim contenteditable class="language-graphql">
+                                        GraphQLJSON
+                                        Email
+                                        Phone
+                                        Date
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div>
+                            <div style="display: grid; grid-template-columns: 50% 50%">
+                                <div>
+                                    <pre class="fragment fade-in step-fade-in-then-out" data-fragment-index="2">
+                                                    <code data-trim contenteditable class="language-graphql">
+type User {
+  id: ID
+  firstName: String
+  lastName: String
+  slug: String
+  isActive: Boolean
+  logs: JSON
+  email: Email
+  phoneNumber: Phone
+  createdAt: Date
+  validTo: Date
+}
+                                                    </code>
+                                                </pre>
+
+                                    <pre class="fragment fade-in step-fade-in-then-out" data-fragment-index="3">
+                            <code data-trim contenteditable class="language-javascript">
+new GraphQLScalarType({
+    name: 'Date',
+    description: 'Date custom scalar type',
+    serialize(value) {
+      return value.getTime(); // value sent to the client
+    },
+    parseValue(value) {
+      return new Date(value); // value from the client
+    },
+    parseLiteral(ast) {
+      if (ast.kind === Kind.INT) {
+        return new Date(ast.value) // ast value is always in string format
+      }
+      return null;
+    },
+  })
+          </code></pre>
+
+                                    <pre class="fragment fade-in step-fade-in-then-out" data-fragment-index="4">
+                            <code data-trim contenteditable class="language-javascript">
+    serialize(value) {
+      return value.getTime(); // value sent to the client
+    },
+          </code></pre>
+                                    <pre class="fragment fade-in step-fade-in-then-out" data-fragment-index="4">
+                            <code data-trim contenteditable class="language-graphql">
+query users {
+  users {
+  	email
+    validTo # parseValue triggers
+  }
+}
+          </code></pre>
+
+                                    <pre class="fragment fade-in step-fade-in-then-out" data-fragment-index="5">
+                            <code data-trim contenteditable class="language-javascript">
+    parseValue(value) {
+      return new Date(value); // value from the client
+    },
+          </code></pre>
+                                    <pre class="fragment fade-in step-fade-in-then-out" data-fragment-index="5">
+                            <code data-trim contenteditable class="language-graphql">
+mutation createUser($validTo: Date!) {
+  createUser(input: {
+    validTo: $validTo,
+    email: "lukasz@kalicki.pl"
+  }) {
+    email
+    validTo # parseValue triggers
+  }
+}
+
+          </code></pre>
+
+                                    <pre class="fragment fade-in step-fade-in-then-out" data-fragment-index="6">
+                            <code data-trim contenteditable class="language-javascript">
+    parseLiteral(ast) {
+      if (ast.kind === Kind.INT) {
+        return new Date(ast.value) // ast value is always in string format
+      }
+      return null;
+    },
+          </code></pre>
+                                    <pre class="fragment fade-in step-fade-in-then-out" data-fragment-index="6">
+                            <code data-trim contenteditable class="language-graphql">
+mutation createUser {
+  createUser(input: {
+    email: "lukasz@kalicki.pl",
+    validTo: 1562015230864
+  }) {
+    id
+    validTo # parseValue triggers
+  }
+}
+
+          </code></pre>
+
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    <div>
+                </section>
+                <section>
+                    <h2>Directives</h2>
+                </section>
+
+                <section class="section">
+                    <h2>Built-in Directives (schemas)</h2>
+
+                  <div class="fragment fade-in step-fade-in-then-out" data-fragment-index="1">
+                      <h6 style="margin-top: 100px; text-transform: unset">
+                          @deprecated
+                      </h6>
+                      <div>
+                          <blockquote>
+                              Graphql implementations that support the type system definition language must provide the <strong>@deprecated</strong> directive if representing deprecated portions of the schema."
+                          </blockquote>
+                          <cite style="text-align: right; font-style: italic; font-size: 18px">GraphQL Spec 3.13 (June 2018 release)</cite>
+                      </div>
+                  </div>
+                    <div class="fragment fade-in step-fade-in-then-out" data-fragment-index="2">
+                        <h6 style="margin-top: 100px; text-transform: unset">
+                            @cacheControl
+                        </h6>
+                        <div>
+                            <blockquote>
+                                A single GraphQL request consists of running many different resolvers, each of which can have different caching semantics. Some fields may be uncacheable. Some fields may be cacheable for a few seconds, and others for a few hours. Some fields may have values that are the same for all users of your app, and other fields may vary based on the current session.
+                            </blockquote>
+                            <cite style="text-align: right; font-style: italic; font-size: 18px">since Apollo Server v2.0.6</cite>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="section">
+                    <h2>Built-in Directives (queries)</h2>
+
+                    <div class="fragment fade-in step-fade-in-then-out" data-fragment-index="1">
+                        <h6 style="margin-top: 100px; text-transform: unset">
+                            @skip @include
+                        </h6>
+                        <div>
+                            <blockquote>
+                                GraphQL implementations should provide the <strong>@skip</strong> and <strong>@include</strong> directives.
+                            </blockquote>
+                            <cite style="text-align: right; font-style: italic; font-size: 18px">GraphQL Spec 3.13 (June 2018 release)</cite>
+                        </div>
+                    </div>
+                    <div class="fragment fade-in step-fade-in-then-out" data-fragment-index="2">
+                        <div>
+                        <pre>
+                            <code data-trim contenteditable class="language-graphql">
+query getUser(id: ID!, $withFriends: Boolean!) {
+  user(id: $id) {
+    firstName
+    friends @include(if: $withFriends) {
+      firstName
+    }
+  }
+}
+
+query getUser(id: ID!, $modalOpen: Boolean!) {
+  user(id: $id) {
+    firstName
+    friends @skip(if: $modalOpen) {
+      firstName
+    }
+  }
+}
+                            </code>
+                        </pre>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section data-background="#384359" class="first-slide">
+                    <h1>Thank you!</h1>
+                </section>
+
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    // { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() {
+                    //     hljs.initHighlightingOnLoad();
+                    // } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+        </script>
+    </body>
+</html>

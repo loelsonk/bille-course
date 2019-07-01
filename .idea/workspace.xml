@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9799eafb-4ab5-4918-82ff-d249f723c6c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/agate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/androidstudio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/arta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/ascetic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-cave.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-cave.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-dune.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-dune.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-estuary.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-estuary.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-forest.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-forest.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-heath.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-heath.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-lakeside.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-lakeside.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-plateau.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-plateau.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-savanna.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-savanna.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-seaside.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-seaside.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-sulphurpool.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/atelier-sulphurpool.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/brown_paper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/brown_papersq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/codepen-embed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/color-brewer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/darkula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/docco.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/far.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/github-gist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/github.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/googlecode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/hybrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/idea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/ir_black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/kimbie.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/kimbie.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/magula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/mono-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/monokai.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/monokai_sublime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/obsidian.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/paraiso.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/paraiso.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/pojoaque.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/pojoaque.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/railscasts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/rainbow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/school_book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/school_book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/solarized_dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/solarized_light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/sunburst.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/tomorrow-night-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/tomorrow-night-bright.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/tomorrow-night-eighties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/tomorrow-night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/tomorrow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/vs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/xcode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/highlight/zenburn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/img/graphql-white.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/img/graphql-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/img/introspection.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/img/prisma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/img/resolvers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/jquery-2.1.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/prismjs/prism.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/prismjs/prism.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/apollo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/graphcool.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/graphql-tree.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/graphql-tree2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/happy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/prisma.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/relay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/rest-api/restapi1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/rest-api/restapi2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/rest-api/restapi3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/rest-api/restapi4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/sad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/schemat1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/schemat2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/discussed-publicly.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/evolution.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/initial-development.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/now-future.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/open-source.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/pinktimeline1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/production-use.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/prototype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/assets/svg/timeline/redesign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/print/paper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/print/pdf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/reveal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/reveal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/reveal2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/beige.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/blood.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/league.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/moon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/serif.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/simple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/sky.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/solarized.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/beige.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/black.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/blood.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/league.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/moon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/night.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/serif.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/simple.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/sky.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/solarized.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/source/white.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/template/mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/template/settings.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/template/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/white.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/css/theme/white2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/js/reveal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/css/atom-one-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/css/zenburn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/league-gothic/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/league-gothic/league-gothic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/league-gothic/league-gothic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/league-gothic/league-gothic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/league-gothic/league-gothic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-semibold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-semibold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-semibold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-semibolditalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-semibolditalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro-semibolditalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/font/source-sans-pro/source-sans-pro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/js/classList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/js/head.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/lib/js/html5shiv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/highlight/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/markdown/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/markdown/example.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/markdown/markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/markdown/marked.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/math/math.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/multiplex/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/multiplex/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/multiplex/master.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/multiplex/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/notes-server/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/notes-server/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/notes-server/notes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/notes/notes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/notes/notes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/print-pdf/print-pdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/search/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/plugin/zoom-js/zoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/examples/assets/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/examples/assets/image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/examples/barebones.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/examples/embedded-media.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/examples/math.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/examples/slide-backgrounds.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/examples/slide-transitions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/qunit-2.5.0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/qunit-2.5.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/simple.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown-element-attributes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown-element-attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown-external.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown-external.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown-options.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown-options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown-slide-attributes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown-slide-attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-markdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-pdf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test-pdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/002-directives-scalars/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2036227405">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="grunt" value="1" />
+          <entry key="html" value="2" />
+          <entry key="js" value="2" />
+          <entry key="json" value="2" />
+          <entry key="svg" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="3" />
+          <entry key="SVG" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="711" />
+          <entry key="js" value="1" />
+          <entry key="json" value="62" />
+          <entry key="svg" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="711" />
+          <entry key="JSON" value="62" />
+          <entry key="JavaScript" value="1" />
+          <entry key="SVG" value="14" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/002-directives-scalars/js/reveal.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/002-directives-scalars/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/002-directives-scalars/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="210" column="116" selection-start-line="210" selection-start-column="116" selection-end-line="210" selection-end-column="116" />
+              <folding>
+                <element signature="n#style#0;n#p#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h6#0;n#div#0;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#cite#0;n#div#0;n#div#0;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h6#0;n#div#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#cite#0;n#div#0;n#div#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#h6#0;n#div#0;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#cite#0;n#div#0;n#div#0;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/001-into-to-graphql/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="1207" column="26" lean-forward="true" selection-start-line="1195" selection-start-column="11" selection-end-line="1207" selection-end-column="26" />
+              <folding>
+                <element signature="n#section#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/002-directives-scalars/assets/svg/graphql-tree.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/002-directives-scalars/assets/svg/graphql-tree2.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/grunt/bin/grunt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/002-directives-scalars/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>#fff</find>
+      <find>Directives</find>
+      <find>Scalar</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/002-directives-scalars/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/002-directives-scalars/package.json" />
+        <option value="$PROJECT_DIR$/002-directives-scalars/assets/svg/graphql-tree.svg" />
+        <option value="$PROJECT_DIR$/002-directives-scalars/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/002-directives-scalars/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/001-into-to-graphql/package.json" />
+      <path value="$PROJECT_DIR$/001-into-to-graphql/plugin/multiplex/package.json" />
+      <path value="$PROJECT_DIR$/002-directives-scalars/package.json" />
+      <path value="$PROJECT_DIR$/002-directives-scalars/plugin/multiplex/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="825" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bille-course" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bille-course" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bille-course" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bille-course" type="462c0819:PsiDirectoryNode" />
+              <item name="001-into-to-graphql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bille-course" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bille-course" type="462c0819:PsiDirectoryNode" />
+              <item name="002-directives-scalars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bille-course" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bille-course" type="462c0819:PsiDirectoryNode" />
+              <item name="002-directives-scalars" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bille-course" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bille-course" type="462c0819:PsiDirectoryNode" />
+              <item name="002-directives-scalars" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="svg" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/002-directives-scalars/assets/svg" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="start (1)" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/002-directives-scalars/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.start (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.start (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9799eafb-4ab5-4918-82ff-d249f723c6c7" name="Default Changelist" comment="" />
+      <created>1562008043008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562008043008</updated>
+      <workItem from="1562008044464" duration="9443000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9443000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.22733612" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Quokka" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32914925" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/002-directives-scalars/js/reveal.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/002-directives-scalars/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/grunt/bin/grunt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/002-directives-scalars/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/002-directives-scalars/assets/svg/graphql-tree.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/002-directives-scalars/assets/svg/graphql-tree2.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/001-into-to-graphql/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="1207" column="26" lean-forward="true" selection-start-line="1195" selection-start-column="11" selection-end-line="1207" selection-end-column="26" />
+          <folding>
+            <element signature="n#section#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/002-directives-scalars/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="210" column="116" selection-start-line="210" selection-start-column="116" selection-end-line="210" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#div#0;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#cite#0;n#div#0;n#div#0;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#div#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#cite#0;n#div#0;n#div#1;n#section#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#h6#0;n#div#0;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#cite#0;n#div#0;n#div#0;n#section#6;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
