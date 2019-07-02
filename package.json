@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --inspect --exec babel-node src/index.js"
+    "start": "nodemon --inspect --exec babel-node src/index.js",
+    "prettier": "prettier --write --check \"src/**/*.js\""
   },
   "author": "",
   "license": "ISC",
@@ -13,12 +14,15 @@
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "faker": "^4.1.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
   },
   "dependencies": {
     "apollo-server-express": "^2.6.1",
     "express": "^4.17.1",
     "graphql": "^14.3.1",
+    "graphql-type-json": "^0.3.0",
+    "isemail": "^3.2.0",
     "moment": "^2.24.0"
   }
 }
